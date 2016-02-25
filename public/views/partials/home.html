@@ -1,0 +1,25 @@
+<div class="page-header" ng-controller="homeCtl">
+    <h1>All Contacts</h1>
+</div>
+<div class="table-responsive">
+    <table class="table table-stripped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+            <th>View</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contact in contacts | filter:search">
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.phone }}</td>
+            <td><a ui-sref="contact-id({id:$index})" class="btn btn-success">View</a></td>
+            <td><button type="button" ng-click="delete()" class="btn-danger btn">Delete</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

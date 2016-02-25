@@ -1,3 +1,6 @@
-/**
- * Created by 1084760 on 2016/02/25.
- */
+// config/database.js
+module.exports = {
+
+    'url' : 'mongodb://127.0.0.1/contacts' // looks like mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
+
+};
