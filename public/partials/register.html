@@ -1,0 +1,47 @@
+<div class="card card-container-register">
+    <h2>Create Your Account</h2>
+    <form class="form-signin" role="form" ng-submit="submit()" name="signInForm" novalidate>
+        <div class="email-pass-invalid-alert">
+            <span id="email-pass-invalid-error"></span>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': signInFormErrors.signInFormFirstNameErrors && !signInForm.first_name.$valid }">
+            <input type="text" class="form-control" name="first_name"
+                   id="first_name" ng-model="first_name" ng-keyup="validateInputText()" placeholder="First Name" required>
+            <div class="input-text-invalid-alert">
+                <span id="input-text-error"></span>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': signInFormErrors.signInFormLastNameErrors && !signInForm.last_name.$valid }">
+            <input type="text" class="form-control" name="first_name"
+                   id="last_name" ng-model="last_name" ng-keyup="validateInputText()" placeholder="Last Name" required>
+            <div class="input-text-invalid-alert">
+                <span class="input-text-error"></span>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': signInFormErrors.signInFormEmailErrors && !signInForm.email_address.$valid }">
+            <input type="email" class="form-control" name="email_address"
+                   id="email_address" ng-model="email_address" ng-keyup="validateEmail()" placeholder="Email Address" required>
+            <div class="email-invalid-alert">
+                <span class="email-error"></span>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': signInFormErrors.signInFormPasswordErrors && !signInForm.password.$valid }">
+            <input type="password" class="form-control" name="password" id="password" ng-model="password" ng-keyup="validatePassword()" placeholder="Password" required>
+            <div class="password-invalid-alert">
+                <span id="password-error"></span>
+            </div>
+        </div>
+        <div id="remember" class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="remember_me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+    </form><!-- /form -->
+    <a ui-sref="forgot-password" class="forgot-password">
+        Forgot the password?
+    </a><br>
+    <a ui-sref="login" class="forgot-password">
+        Already Have Account ??
+    </a>
+</div><!-- /card-container -->

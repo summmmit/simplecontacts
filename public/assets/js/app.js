@@ -30,7 +30,7 @@ app.config(
                 })
                 .state('register', {
                     url: '/register',
-                    templateUrl: './partials/register.html',
+                    templateUrl: './partials/register.html'
                 })
                 .state('forgot-password', {
                     url: '/forgot-password',
