@@ -20,16 +20,14 @@
     "body-parser": "~1.5.2",
     "jsonwebtoken": "^5.0.2",
     "method-override": "~2.1.2",
-    "ejs" : "~2.4.1",
-
-    "passport" : "~0.1.17",
-    "passport-local" : "~0.1.6",
-    "passport-facebook" : "~1.0.2",
-    "passport-twitter" : "~1.0.2",
-    "passport-google-oauth" : "~0.1.5",
-    "connect-flash" : "~0.1.1",
-    "bcrypt-nodejs" : "latest",
-
+    "ejs": "~2.4.1",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "passport-facebook": "~1.0.2",
+    "passport-twitter": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "connect-flash": "~0.1.1",
+    "bcrypt-nodejs": "latest",
     "cookie-parser": "~1.0.0",
     "express-session": "~1.0.0"
   },
@@ -40,6 +38,16 @@
   },
   "homepage": "https://github.com/summmmit/simplecontacts#readme",
   "devDependencies": {
-    "angular": "^1.5.0"
+    "angular": "^1.5.0",
+    "jquery": "^2.2.0",
+    "angular-strap": "2.3.6",
+    "angular-ui-route": "0.2.18",
+    "angular-animate": "1.5.0",
+    "angular-sanitize": "1.5.0",
+    "angular-resource": "1.5.0",
+    "angular-motion": "0.4.3",
+    "angular-momentjs": "0.2.2",
+    "angular-ui-bootstrap": "0.2.18",
+    "bootstrap": "3.3.6"
   }
 }
